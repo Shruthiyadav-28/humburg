@@ -1,0 +1,60 @@
+
+
+
+.container{
+
+  
+   width:350px;
+   height: 350px;
+   display: block;
+    border: 2px solid;
+   position: absolute;
+    top: 20%;
+    left: 30%;
+    background-color: orange;
+
+
+}
+button{
+    background-color: black;
+    color:white;
+    margin: 10px 10px;
+    border-radius: 20px;
+   
+ 
+
+}
+button:hover{
+    background-color: orange;
+    color: black;
+}
+#butterfly{
+    
+   
+    object-fit:cover;
+    padding: 100px;
+    width: 40%;
+
+
+
+    
+   
+}
+.container>.TRANS:hover~#butterfly {
+  transform: translateX(20%);
+  transition: all 2s ease-in-out;
+}
+
+.container>.ROTATE:hover~#butterfly{
+    transform: rotateX(360deg);
+    transition: all 2s ease-in-out;
+}
+.container>.SCALE:hover~#butterfly{
+    transform: scale(2);
+    transition: all 2s ease-in-out;
+
+}
+.container>.SKEW:hover~#butterfly{
+    transform: skew(45deg);
+    transition: all 2s ease-in-out;
+}
